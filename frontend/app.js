@@ -32,7 +32,6 @@ async function askQuestion() {
 
         const data = await res.json();
 
-        
         responseBox.innerText = JSON.stringify(data, null, 2);
     } catch (error) {
         console.error(error);
