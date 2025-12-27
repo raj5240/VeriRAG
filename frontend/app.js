@@ -10,7 +10,7 @@ async function askQuestion() {
         return;
     }
 
-    // Reset UI
+   
     responseBox.innerText = "";
     loading.classList.remove("hidden");
 
@@ -20,7 +20,7 @@ async function askQuestion() {
             headers: {
                 "Content-Type": "application/json"
             },
-            // IMPORTANT: Send JSON object, not raw string
+            
             body: JSON.stringify({
                 question: question
             })
@@ -32,7 +32,7 @@ async function askQuestion() {
 
         const data = await res.json();
 
-        // Pretty-print response
+        
         responseBox.innerText = JSON.stringify(data, null, 2);
     } catch (error) {
         console.error(error);
