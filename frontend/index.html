@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>VeriRAG</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>VeriRAG 🔍</h1>
+        <p class="subtitle">Trust-Aware Real-Time RAG System</p>
+
+        <textarea
+            id="question"
+            placeholder="Ask a question..."
+            rows="4"
+        ></textarea>
+
+        <button onclick="askQuestion()">Ask</button>
+
+        <div id="loading" class="hidden">⏳ Thinking...</div>
+
+        <div id="response" class="response-box"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
